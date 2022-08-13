@@ -226,7 +226,7 @@ h1 {
 
 }
 
-header{
+.fondoHeader{
     background-image: linear-gradient(
         cyan , pink
     );
