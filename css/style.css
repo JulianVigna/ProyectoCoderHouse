@@ -13,7 +13,7 @@
             "cuerpo"
             "pie";
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     header {
@@ -45,17 +45,17 @@
     .gridFooter {
         display: grid;
         grid-template-areas:
-        "parteuno partedos ";
+            "parteuno partedos ";
         grid-template-columns: 1fr 1fr;
         display: flex;
         justify-content: space-evenly;
         background-color: rgb(198, 202, 207);
     }
-    
+
     .footerUno {
         grid-area: parteuno;
     }
-    
+
     .FooterDos {
         grid-area: titpartedos;
     }
@@ -73,7 +73,7 @@
         padding: 10px;
         border-right: 1px solid #fff;
     }
-    
+
     header label {
         display: block;
     }
@@ -83,12 +83,12 @@
         background: #4e94ab;
         width: 70%;
         margin-left: -70%;
-        transition: all 0, 5s;   
+        transition: all 0, 5s;
     }
 
     .menu ul {
         flex-direction: column;
-        
+
     }
 
     .menu li {
@@ -102,17 +102,17 @@
     .gridFooter {
         display: grid;
         grid-template-areas:
-        "parteuno partedos ";
+            "parteuno partedos ";
         grid-template-columns: 1fr 1fr;
         display: flex;
         justify-content: space-evenly;
         background-color: rgb(198, 202, 207);
     }
-    
+
     .footerUno {
         grid-area: parteuno;
     }
-    
+
     .FooterDos {
         grid-area: titpartedos;
     }
@@ -130,7 +130,7 @@
         padding: 10px;
         border-right: 1px solid #fff;
     }
-    
+
     header label {
         display: block;
     }
@@ -141,13 +141,13 @@
         width: 70%;
         margin-left: -70%;
         transition: all 0, 5s;
-        
+
     }
 
 
     .menu ul {
         flex-direction: column;
-        
+
     }
 
     .menu li {
@@ -156,9 +156,10 @@
 
     #btn-menu:checked~.menu {
         margin: 0%;
-    }   
-    footer{
-        background-color:  rgb(198, 202, 207);
+    }
+
+    footer {
+        background-color: rgb(198, 202, 207);
     }
 }
 
@@ -226,52 +227,56 @@ h1 {
 
 }
 
-.fondoHeader{
-    background-image: linear-gradient(
-        cyan , pink
-    );
+.fondoHeader {
+    background-image: linear-gradient(cyan, pink);
 }
-header h1{
-    transform: skew( -20deg);
+
+header h1 {
+    transform: skew(-20deg);
 }
 
 
 .tracking-in-contract-bck {
-	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 @-webkit-keyframes tracking-in-contract-bck {
-0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px);
-            transform: translateZ(400px);
-    opacity: 0;
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
-40% {
-    opacity: 0.6;
-}
-100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-}
-}
+
 @keyframes tracking-in-contract-bck {
-0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(400px);
-            transform: translateZ(400px);
-    opacity: 0;
-}
-40% {
-    opacity: 0.6;
-}
-100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-}
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
 
 .menuPirncipal {
@@ -364,7 +369,7 @@ header h1{
 
 /* FOOTER */
 
-.subtituloA {
+/* .subtituloA {
     font-size: 17px;
     padding-top: 10px;
 }
@@ -405,5 +410,28 @@ Footer img{
 
 footer li{
     list-style: none;
+} */
+
+
+
+
+
+footer img {
+    width: 50px;
+    height: 40px;
+
 }
 
+.redSocial {
+
+    width: 30px;
+    height: 30px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer {
+    background-color: rgb(198, 202, 207)
+}
