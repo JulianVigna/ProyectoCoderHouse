@@ -1,0 +1,158 @@
+/* RESPONSIVE DESIGN */
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "cabeza"
+            "cuerpo"
+            "pie";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-template-areas: "cabeza";
+    }
+
+    main {
+        grid-template-areas: "cuerpo";
+    }
+
+    footer {
+        grid-template-areas: "pie pie";
+    }
+
+    .menuFlex {
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-evenly;
+    }
+
+    header label {
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-right: 30px solid #fff;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-areas:
+            "parteuno partedos ";
+        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(198, 202, 207);
+    }
+
+    .footerUno {
+        grid-area: parteuno;
+    }
+
+    .FooterDos {
+        grid-area: titpartedos;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width:481px) and (max-width:1023px) {
+
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-right: 1px solid #fff;
+        display: block;
+    }
+
+
+    .menu {
+        position: absolute;
+        background: #4e94ab;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0, 5s;
+
+        ul {
+            flex-direction: column;
+        }   
+        li {
+            border-top: 1px solid #fff;
+        }
+    }
+
+    
+    #btn-menu:checked~.menu {
+        margin: 0%;
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-areas:
+            "parteuno partedos ";
+        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(198, 202, 207);
+    }
+
+    .footerUno {
+        grid-area: parteuno;
+    }
+
+    .FooterDos {
+        grid-area: titpartedos;
+    }
+
+}
+
+/* SmartPhone */
+
+@media (max-width:480px) {
+
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-right: 1px solid #fff;
+        display: block;
+    }
+
+
+
+    .menu {
+        position: absolute;
+        background: #4e94ab;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0, 5s;
+
+        ul {
+            flex-direction: column;
+    
+        }
+
+        li {
+            border-top: 1px solid #fff;
+        }
+        
+
+    }
+
+
+    #btn-menu:checked~.menu {
+        margin: 0%;
+    }
+
+    footer {
+        background-color: rgb(198, 202, 207);
+    }
+}

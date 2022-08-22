@@ -1,0 +1,113 @@
+/* HEADER */
+
+
+
+.navegadorMenu {
+    background: #4e94ab;
+    width: 100%;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.imgMenu {
+    width: 30px;
+    height: 30px;
+}
+
+header{
+
+    label :hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+    h1 {
+        transform: skew(-20deg);
+}
+
+}
+
+.menu{
+    
+    ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+    li :hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+    li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+}
+
+h1 {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: #204fbc;
+
+}
+
+.fondoHeader {
+    background-image: linear-gradient(cyan, pink);
+}
+
+
+
+.tracking-in-contract-bck {
+    -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.menuPirncipal {
+
+    font-size: 19px;
+    font-weight: bold;
+}
