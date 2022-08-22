@@ -1,0 +1,344 @@
+/* IMPORTO */ /* RESPONSIVE DESIGN */
+/* Desktop */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100;1,300&display=swap");
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas: "cabeza" "cuerpo" "pie";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  header {
+    grid-template-areas: "cabeza";
+  }
+  main {
+    grid-template-areas: "cuerpo";
+  }
+  footer {
+    grid-template-areas: "pie pie";
+  }
+  .menuFlex {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+  }
+  header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 30px solid #fff;
+  }
+  .gridFooter {
+    display: grid;
+    grid-template-areas: "parteuno partedos ";
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(198, 202, 207);
+  }
+  .footerUno {
+    grid-area: parteuno;
+  }
+  .FooterDos {
+    grid-area: titpartedos;
+  }
+}
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+  header label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #4e94ab;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0, 5s;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0%;
+  }
+  .gridFooter {
+    display: grid;
+    grid-template-areas: "parteuno partedos ";
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(198, 202, 207);
+  }
+  .footerUno {
+    grid-area: parteuno;
+  }
+  .FooterDos {
+    grid-area: titpartedos;
+  }
+}
+/* SmartPhone */
+@media (max-width: 480px) {
+  header label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: #4e94ab;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0, 5s;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0%;
+  }
+  footer {
+    background-color: rgb(198, 202, 207);
+  }
+}
+/* IMPORTO GOOGLE FONTS  */
+/* RESETEO CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* BODY  */
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* HEADER */
+.navegadorMenu {
+  background: #4e94ab;
+  width: 100%;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.imgMenu {
+  width: 30px;
+  height: 30px;
+}
+
+header label :hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  transform: skew(-20deg);
+}
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.menu li :hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: #204fbc;
+}
+
+.fondoHeader {
+  background-image: linear-gradient(cyan, pink);
+}
+
+.tracking-in-contract-bck {
+  -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.menuPirncipal {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* MAIN index*/
+.videoPrincipal {
+  width: 100%;
+  height: 500px;
+}
+
+/* MAIN solicitar cotizacion */
+.tituloMain {
+  font-size: 19px;
+  margin: 1%;
+}
+
+.parrafo {
+  font-size: 17px;
+  margin: 1%;
+}
+
+.botonEnviar {
+  margin-left: 13%;
+}
+
+/*MAIN servicios  */
+.imagenMain {
+  width: 30%;
+  margin: 1%;
+}
+
+/* MAIN rrhh */
+.listadoSeccion {
+  margin-right: 1%;
+}
+
+.listadoBotones {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.formularioRrhh {
+  font-size: 16px;
+  margin: 1%;
+}
+
+.listadoBeneficios {
+  margin-left: 2%;
+}
+
+/* MAIN quienes somos */
+.tituloMain {
+  text-decoration: underline;
+  font-size: 19px;
+  margin: 1%;
+}
+
+.parrafo {
+  font-size: 17px;
+  margin: 1%;
+}
+
+/* FOOTER */
+/* .subtituloA {
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.listadoSubtitulo {
+    padding-top: 5px;
+}
+
+.SubtituloB {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-decoration-line: underline;
+}
+
+Footer img{
+
+    max-width: 40px;
+
+}
+
+.inframeFooter {
+    padding-top: 10px;
+    width: 60%;
+    height: 200px;
+}
+
+.pieDePagina {
+    font-size: 14px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.pieDePaginaDos {
+    font-weight: bold;
+}
+
+footer li{
+    list-style: none;
+} */
+footer img {
+  width: 50px;
+  height: 40px;
+}
+
+.redSocial {
+  width: 30px;
+  height: 30px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer {
+  background-color: rgb(198, 202, 207);
+}
+
+/*# sourceMappingURL=destino.css.map */
