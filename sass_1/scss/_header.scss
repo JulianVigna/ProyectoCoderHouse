@@ -1,7 +1,5 @@
 /* HEADER */
 
-
-
 .navegadorMenu {
     background: #4e94ab;
     width: 100%;
@@ -16,52 +14,51 @@
     height: 30px;
 }
 
-header{
+header {
 
     label :hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
-}
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
     h1 {
         transform: skew(-20deg);
+        font-size: 40px;
+        font-style: italic;
+        font-size: 30px;
+        font-weight: bold;
+        color: #204fbc;
+    }
 }
 
-}
+.menu {
 
-.menu{
-    
     ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
 
     li :hover {
-    background: rgba(0, 0, 0, 0.3);
-}
+        background: rgba(0, 0, 0, 0.3);
+    }
 
     li a {
-    display: block;
-    padding: 15px 20px;
-    color: #fff;
-    text-decoration: none;
-}
-}
-
-h1 {
-    font-style: italic;
-    font-size: 30px;
-    font-weight: bold;
-    color: #204fbc;
-
+        display: block;
+        padding: 15px 20px;
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 .fondoHeader {
     background-image: linear-gradient(cyan, pink);
 }
-
-
 
 .tracking-in-contract-bck {
     -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -107,7 +104,6 @@ h1 {
 }
 
 .menuPirncipal {
-
     font-size: 19px;
     font-weight: bold;
 }

@@ -1,0 +1,7 @@
+Se comprimieron todas las imagenes de la carpeta multimedia tanto las JPG (imagenes de fotos que son 3) como las de logo en su formato PNG (10 imagenes).
+
+Se agregaron las keywords: limpieza, servicio, empresas, clearing, service, eficiencia.
+Se agregaron las descripciones de cada pagina. 
+
+
+

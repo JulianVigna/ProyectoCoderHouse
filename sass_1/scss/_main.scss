@@ -5,30 +5,17 @@
 }
 
 /* MAIN solicitar cotizacion */
-.tituloMain {
-    font-size: 19px;
-    margin: 1%;
-}
-
-.parrafo {
-    font-size: 17px;
-    margin: 1%;
-}
-
 .botonEnviar {
     margin-left: 13%;
 }
 
 /*MAIN servicios  */
-
 .imagenMain {
     width: 30%;
     margin: 1%;
 }
 
 /* MAIN rrhh */
-
-
 .listadoSeccion {
     margin-right: 1%;
 }
@@ -54,12 +41,12 @@
 
 .tituloMain {
     text-decoration: underline;
-    font-size: 19px;
+    font-size: 25px;
     margin: 1%;
 }
 
 .parrafo {
+    @extend .tituloMain;
     font-size: 17px;
-    margin: 1%;
+    text-decoration: solid;
 }
-
