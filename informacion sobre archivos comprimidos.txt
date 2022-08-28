@@ -1,0 +1,4 @@
+Se comprimieron todas las imagenes de la carpeta multimedia tanto las JPG (imagenes de fotos que son 3) como las de logo en su formato PNG (10 imagenes).
+
+
+

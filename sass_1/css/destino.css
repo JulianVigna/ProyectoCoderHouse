@@ -50,7 +50,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    padding: 10px;
+    padding: 2px;
     border-right: 1px solid #fff;
     display: block;
   }
@@ -91,7 +91,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    padding: 10px;
+    padding: 2px;
     border-right: 1px solid #fff;
     display: block;
   }
@@ -149,8 +149,16 @@ header label :hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.3);
 }
+header a {
+  text-decoration: none;
+}
 header h1 {
   transform: skew(-20deg);
+  font-size: 40px;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: #204fbc;
 }
 
 .menu ul {
@@ -167,13 +175,6 @@ header h1 {
   padding: 15px 20px;
   color: #fff;
   text-decoration: none;
-}
-
-h1 {
-  font-style: italic;
-  font-size: 30px;
-  font-weight: bold;
-  color: #204fbc;
 }
 
 .fondoHeader {
@@ -229,16 +230,6 @@ h1 {
 }
 
 /* MAIN solicitar cotizacion */
-.tituloMain {
-  font-size: 19px;
-  margin: 1%;
-}
-
-.parrafo {
-  font-size: 17px;
-  margin: 1%;
-}
-
 .botonEnviar {
   margin-left: 13%;
 }
@@ -269,76 +260,32 @@ h1 {
 }
 
 /* MAIN quienes somos */
-.tituloMain {
+.tituloMain, .parrafo {
   text-decoration: underline;
-  font-size: 19px;
+  font-size: 25px;
   margin: 1%;
 }
 
 .parrafo {
   font-size: 17px;
-  margin: 1%;
+  text-decoration: solid;
 }
 
 /* FOOTER */
-/* .subtituloA {
-    font-size: 17px;
-    padding-top: 10px;
+footer {
+  background-color: rgb(198, 202, 207);
 }
-
-.listadoSubtitulo {
-    padding-top: 5px;
-}
-
-.SubtituloB {
-    font-size: 16px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    text-decoration-line: underline;
-}
-
-Footer img{
-
-    max-width: 40px;
-
-}
-
-.inframeFooter {
-    padding-top: 10px;
-    width: 60%;
-    height: 200px;
-}
-
-.pieDePagina {
-    font-size: 14px;
-    margin-top: 20px;
-    font-style: italic;
-}
-
-.pieDePaginaDos {
-    font-weight: bold;
-}
-
-footer li{
-    list-style: none;
-} */
 footer img {
   width: 50px;
   height: 40px;
+}
+footer ul li {
+  list-style: none;
 }
 
 .redSocial {
   width: 30px;
   height: 30px;
-}
-
-footer ul li {
-  list-style: none;
-}
-
-footer {
-  background-color: rgb(198, 202, 207);
 }
 
 /*# sourceMappingURL=destino.css.map */
