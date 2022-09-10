@@ -43,6 +43,10 @@
   .FooterDos {
     grid-area: titpartedos;
   }
+  .imagenMain {
+    width: 700px;
+    margin: 1%;
+  }
 }
 /* Tablet */
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -84,6 +88,10 @@
   .FooterDos {
     grid-area: titpartedos;
   }
+  .imagenMain {
+    width: 400px;
+    margin: 1%;
+  }
 }
 /* SmartPhone */
 @media (max-width: 480px) {
@@ -113,6 +121,14 @@
   }
   footer {
     background-color: rgb(198, 202, 207);
+  }
+  .separacionSmartphone {
+    padding: 10px;
+    background-color: pink;
+  }
+  .imagenMain {
+    width: 300px;
+    margin: 5px;
   }
 }
 /* IMPORTO GOOGLE FONTS  */
@@ -159,6 +175,10 @@ header h1 {
   font-size: 30px;
   font-weight: bold;
   color: #204fbc;
+}
+header div a img {
+  width: 100px;
+  height: 100px;
 }
 
 .menu ul {
@@ -232,12 +252,6 @@ header h1 {
 /* MAIN solicitar cotizacion */
 .botonEnviar {
   margin-left: 13%;
-}
-
-/*MAIN servicios  */
-.imagenMain {
-  width: 30%;
-  margin: 1%;
 }
 
 /* MAIN rrhh */
