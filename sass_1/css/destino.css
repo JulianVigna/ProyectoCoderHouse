@@ -270,15 +270,15 @@ header div a img {
 }
 
 /* MAIN quienes somos */
-.tituloMain, .parrafo {
+.tituloMain {
   text-decoration: underline;
   font-size: 25px;
   margin: 1%;
 }
 
 .parrafo {
+  margin: 1%;
   font-size: 17px;
-  text-decoration: solid;
 }
 
 /* FOOTER */
